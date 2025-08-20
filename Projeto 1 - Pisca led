@@ -1,0 +1,15 @@
+// Código C++
+//
+int ledPin =10; // Associa variavel ledPin ao pino digitial 10
+void setup()
+{
+  pinMode(ledPin, OUTPUT); // Associa pino 10 (ledpin ) a saida (OUTPUT)
+}
+
+void loop()
+{
+  digitalWrite(ledPin, HIGH); //ledPin recebe HIGH 5v
+  delay(1000); // espera por 1000 millisecond(s)
+  digitalWrite(ledPin, LOW); //ledPin recebe LOW 0v
+  delay(1000); // espera por 1000 millisecond(s)
+}
