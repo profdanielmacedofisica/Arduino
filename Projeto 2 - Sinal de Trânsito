@@ -1,0 +1,27 @@
+// Código C++
+
+void setup()
+{
+  pinMode(7, OUTPUT);
+  pinMode(8, OUTPUT);
+  pinMode(5, OUTPUT); //configura saídas 
+}
+
+void loop()
+{
+  
+  digitalWrite(5, HIGH); //5 recebe HIGH 5v
+  digitalWrite(7, LOW); //7 recebe HIGH 0v
+  digitalWrite(8, LOW); //8 recebe  0v
+  delay(2000); // espera por 2(s)
+  
+  digitalWrite(5, LOW); //5 recebe LOW 0v
+  digitalWrite(7, HIGH); //7 recebe HIGH 5v
+  digitalWrite(8, LOW); //ledPin recebe LOW 0v
+  delay(2000); // espera por 2 s
+  
+  digitalWrite(5, LOW); //ledPin recebe LOW 0v
+  digitalWrite(7, LOW); //ledPin recebe LOW 0v
+  digitalWrite(8, HIGH); //ledPin recebe HIGH 5v
+  delay(2000); // espera por 2 s
+}
